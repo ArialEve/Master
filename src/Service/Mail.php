@@ -6,8 +6,8 @@ use Mailjet\Resources;
 
 class Mail 
 {
-    private $api_key = "54abf7bd7c959b059abdee6778722a2c";
-    private $api_key_secret = "89a12b1d1e22e0c08167316926b02e1e";
+    private $api_key = "8a4975bbeef708a9a7e806970ac12d88";
+    private $api_key_secret = "c700cbeb6bc33cececc392d4b2a1d117";
 
     public function send($toEmail, $toName, $subject, $content)
     {
