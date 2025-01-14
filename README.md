@@ -1,4 +1,4 @@
-# Manar El Gorchi's Ecommerce Website (Symfony Exam Project)
+# Ecommerce Website (Symfony Exam Project)
 
 This project is an ecommerce website built using Symfony. It showcases collections of both men's and women's fashion, with an easy-to-use admin panel to manage the website's content.
 
@@ -25,7 +25,7 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/ecommerce-project.git
+    git clone git@github.com:ArialEve/Master.git
     cd ecommerce-project
     ```
 
