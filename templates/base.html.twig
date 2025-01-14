@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Une boutique géniale, avec pleins d'articles géniaux et beaux et tout...">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>{% block title %}Style by Manar{% endblock %}</title>
+
+    <!-- Link to Google Fonts and external CSS -->
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/carousel.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fbe1f4;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff66b2;
+            padding: 15px 0;
+        }
+
+        nav {
+            font-family: 'Pacifico', cursive;
+        }
+
+        .bg-dark {
+            background-color: #ee6caf !important; /* Soft Barbie pink background */
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: white; /* White text on hover */
+            text-decoration: underline;
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar-nav .nav-item.active .nav-link:hover {
+            color: white; /* Ensuring hover on active links stays white */
+        }
+
+        .footer-custom {
+            background-color: #ff66b2;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-family: 'Pacifico', cursive;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ff3399;
+        }
+
+        .main-content {
+            padding: 50px 0;
+        }
+
+        .footer-custom p {
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .carousel-item img {
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carousel-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .main-heading {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            color: #ff66b2;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .btn-primary {
+            background-color: #ff66b2;
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: background-color 0.4s ease;
+        }
+
+        .text-secondary {
+            color: #f4d0f4 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff3399;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: white;
+            margin-right: 50px; /* Adds more space to the right */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-right: 30px; /* Adds more space between the links */
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    {% include "_nav.html.twig" %}
+</header>
+
+<main class="mb-5 main-content" role="main">
+    {% if carousel is defined %}
+        {% include "_carousel.html.twig" %}
+    {% else %}
+        {% set margin = 'mt-5' %}
+    {% endif %}
+    <div class="container {{margin ?? 0}}">
+        <h2 class="main-heading">Bienvenue sur Style by Manar!</h2>
+        {% block body %}{% endblock %}
+    </div>
+</main>
+
+<footer class="footer-custom">
+    {% include "_footer.html.twig" %}
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="{{asset('assets/js/bootstrap.bundle.js')}}"></script>
+</body>
+</html>

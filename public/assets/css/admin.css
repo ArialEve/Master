@@ -1,0 +1,116 @@
+/* Apply Barbie-themed pink background to the entire navbar */
+.navbar {
+    background-color: #ee6caf !important;  /* Soft Barbie pink */
+}
+/* Apply Barbie-themed pink background to the sidebar menu */
+#main-menu {
+    background-color: #ee6caf !important;  /* Soft Barbie pink */
+}
+
+/* Optionally, apply Barbie-themed pink background to the sidebar */
+.sidebar {
+    background-color: #ee6caf !important;  /* Soft Barbie pink */
+}
+
+/* Ensure that active items are bold Barbie pink */
+#main-menu .menu .menu-item.active {
+    background-color: #ff66b2 !important;  /* Bold Barbie pink */
+}
+
+/* Style for the active menu item link */
+#main-menu .menu .menu-item.active a {
+    color: white !important;  /* White text */
+    background-color: #ff00b3 !important;  /* Bold pink */
+}
+#main-menu .menu .menu-icon {
+    color: #180622;
+    font-size: var(--font-size-lg);
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+/* Style for the menu items */
+.menu-item a {
+    color: white !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+    color: #ff3399 !important;  /* Barbie pink text on hover */
+    background-color: white !important;  /* White background on hover */
+}
+
+/* Navbar and sidebar link styling */
+.navbar .nav-link,
+.sidebar .nav-link {
+    color: white !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+}
+
+/* Adding transition effects to the sidebar */
+.sidebar .menu-item a,
+.navbar .nav-link {
+    transition: all 0.3s ease !important;
+}
+
+/* Hover effect for sidebar menu items */
+.sidebar .menu-item a:hover {
+    color: #ff3399 !important;  /* Barbie pink text */
+    background-color: #fff !important;  /* White background */
+}
+#main-menu .menu .menu-item.active:not(.expanded) .menu-icon, #main-menu .menu .menu-item.active:not(.expanded) a {
+    color: #fff;
+}
+
+
+
+/* Base logo styling */
+a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff !important; /* White text for better visibility */
+}
+
+/* "Style by Manar" text */
+a.logo .logo-custom {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem; /* Slightly smaller for a more elegant look */
+    color: #000 !important; /* White for clear visibility */
+    text-transform: uppercase;
+    font-weight: 400; /* Normal weight for a softer feel */
+}
+
+/* Compact logo icon */
+a.logo .logo-compact {
+    font-size: 1.1rem; /* Smaller, subtle */
+    color: #ffffff !important;
+    margin-left: 10px;
+}
+
+/* Hover Effect: Light, smooth transition */
+a.logo:hover .logo-custom,
+a.logo:hover .logo-compact {
+    color: #000 !important; /* Barbie pink hover color */
+}
+
+/* Optional: Light background change on hover for a subtle effect */
+a.logo:hover {
+    background-color: rgba(255, 102, 178, 0.1); /* Light, subtle background */
+    border-radius: 4px;
+    padding: 4px 10px; /* Soft padding around the logo */
+}
+
+/* Optional: Remove underlines for a cleaner look */
+a.logo:hover {
+    text-decoration: none;
+}
+

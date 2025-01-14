@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h3 class="text-center" style="color: #ff66b2; font-weight: bold;">Top ventes du moment</h3>
+    <p class="lead text-center" style="color: #ff3399;">Découvrez nos articles les plus vendus du mois dernier et laissez-vous inspirer!</p>
+    <div class="row">
+        {% for product in top_products %}
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="{{ path('product_show', {slug: product.slug}) }}">
+                        <img class="img-fluid" src="/uploads/{{product.image}}" alt="{{product.name}}">
+                    </a>
+                    <h5 class="mt-2" style="font-weight: bold; color: #ff66b2;">{{ product.name}}</h5>
+                    <span class="product-subtitle text-center">{{product.subtitle}}</span>
+                    <span class="product-price text-center">{{(product.price / 100 )|number_format(2,',', '.')}} € </span>
+                </div>
+            </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">L'Horizon Audacieux : Nouvelle Collection <span class="text-muted">Femme</span></h2>
+            <p class="lead">
+                Célébrez votre beauté unique et votre confiance avec notre toute nouvelle collection femme, où l'élégance rencontre le design contemporain. Les pièces de cette saison sont conçues pour sublimer votre féminité, offrant un mélange parfait de grâce, de sophistication et de modernité. Des robes élégantes aux blouses statement en passant par les pantalons tailleur, chaque article est pensé pour s'adapter à votre mode de vie, que vous soyez en route pour un événement spécial, une journée au bureau ou une sortie décontractée. La collection met en avant des tissus luxueux, des détails raffinés et des silhouettes polyvalentes qui permettent d'exprimer facilement votre individualité.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid" src="{{ asset('assets/img/woman.jpg') }}" alt="model woman">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">L'Horizon Audacieux : Nouvelle Collection <span class="text-muted">Homme</span></h2>
+            <p class="lead">
+                Faites un pas vers l'avenir de la mode avec notre nouvelle collection homme, où modernité et savoir-faire intemporel se rencontrent. Cette collection est conçue pour l'homme qui n'a pas peur de faire une déclaration avec son style. Que vous recherchiez le costume parfait pour un événement formel ou des pièces décontractées mais audacieuses pour un look quotidien, nos dernières créations offrent une gamme variée d'options. Confectionnées avec des matériaux de haute qualité, chaque pièce allie durabilité et confort, vous permettant de rester élégant tout en étant à l'aise. Adoptez la polyvalence et élevez votre garde-robe avec des styles à la pointe de la mode qui s'adaptent parfaitement au passage du jour à la nuit, du travail au week-end.
+            </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="img-fluid" src="{{ asset('assets/img/man.webp') }}" alt="model man">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+{% endblock %}

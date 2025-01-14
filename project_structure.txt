@@ -1,0 +1,93 @@
+.
+├── backoffice2.png
+├── backoffice.png
+├── bin
+│   ├── console
+│   └── phpunit
+├── bootique2.png
+├── bootique3.png
+├── bootique.png
+├── composer.json
+├── composer.lock
+├── config
+│   ├── bundles.php
+│   ├── packages
+│   ├── preload.php
+│   ├── routes
+│   ├── routes.yaml
+│   └── services.yaml
+├── docker-compose.yml
+├── migrations
+│   └── Version20250113183545.php
+├── phpunit.xml.dist
+├── project_structure.txt
+├── public
+│   ├── assets
+│   ├── bundles
+│   ├── index.php
+│   └── uploads
+├── README.md
+├── src
+│   ├── Controller
+│   ├── Entity
+│   ├── Form
+│   ├── Kernel.php
+│   ├── Model
+│   ├── Repository
+│   ├── Security
+│   └── Service
+├── symfony.lock
+├── templates
+│   ├── account
+│   ├── base.html.twig
+│   ├── bundles
+│   ├── _carousel.html.twig
+│   ├── cart
+│   ├── contact
+│   ├── _footer.html.twig
+│   ├── home
+│   ├── _nav.html.twig
+│   ├── order
+│   ├── payment
+│   ├── product
+│   ├── register
+│   └── security
+├── tests
+│   └── bootstrap.php
+├── translations
+├── var
+│   ├── cache
+│   └── log
+└── vendor
+    ├── autoload.php
+    ├── autoload_runtime.php
+    ├── bin
+    ├── composer
+    ├── doctrine
+    ├── easycorp
+    ├── egulias
+    ├── friendsofphp
+    ├── guzzlehttp
+    ├── hamcrest
+    ├── laminas
+    ├── mailjet
+    ├── mockery
+    ├── monolog
+    ├── myclabs
+    ├── nikic
+    ├── phar-io
+    ├── phpdocumentor
+    ├── phpspec
+    ├── phpstan
+    ├── phpunit
+    ├── psr
+    ├── ralouphie
+    ├── sebastian
+    ├── sensio
+    ├── stripe
+    ├── symfony
+    ├── theseer
+    ├── twig
+    └── webmozart
+
+62 directories, 28 files

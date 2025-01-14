@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="barbie-theme">
+        <h3 class="main-title">Je suis Manar El Gorchi, développeuse passionnée de mode, et j'ai créé ce site dans le cadre d'un examen Symfony. 💻✨</h3>
+        <p class="intro-text">
+            Bienvenue chez <b class="brand-name">Style by Manar</b>, là où la mode rencontre l’audace. 💃✨ Ici, on ne fait pas que vendre des vêtements : on crée des vibes, on raconte des histoires, et on célèbre toutes les versions de vous-même.
+        </p>
+        <p class="passion-text">
+            La mode, c’est plus qu’un hobby pour moi. C’est un moyen d’exprimer qui nous sommes sans parler. 🎨 Que ce soit une robe simple ou un ensemble audacieux, chaque pièce a une histoire à raconter, et je suis là pour vous aider à raconter la vôtre avec des tenues stylées et uniques.
+        </p>
+        <p class="mission-text">
+            Notre mission ? Vous offrir des pièces qui vous font dire : "C’est tellement MOI." 🤍 Des tenues comfy mais stylées, des looks qui tournent les têtes, et des essentiels qui vous accompagnent du café du matin aux soirées endiablées. 🕶️☕
+        </p>
+        <p class="mission-text">
+            On bosse dur pour vous dénicher des pépites tendances, tout en mettant en avant qualité, confort, et accessibilité. Nos collections, c’est un mélange parfait entre must-have intemporels et coups de cœur du moment. 🚀
+        </p>
+        <p class="mission-text">
+            Pourquoi choisir Style by Manar ? Parce qu’on vous comprend. Vos goûts, vos envies, vos moods – on est là pour ça. Vous êtes au centre de tout ce qu’on fait, et on adore vous voir briller dans nos créations. 🌈
+        </p>
+        <p class="mission-text">
+            Alors, prête à réinventer votre style ? ✨ Let's go, parce que la mode, c’est avant tout un terrain de jeu. 🎨 On est là pour que vous vous amusiez, exploriez, et exprimiez qui vous êtes, un outfit à la fois.
+        </p>
+        <p class="contact-text">
+            Vous avez une question, une suggestion ou juste envie de papoter ? Dites-nous tout, on adore discuter avec vous. Slidez dans nos DM ou envoyez-nous un petit message. 📩
+        </p>
+        <p class="thank-you-text">
+            Merci d’être ici. Merci d’être vous. Avec Style by Manar, le style, c’est VOUS. 💖
+        </p>
+    </div>
+
+    <style>
+        .barbie-theme {
+            font-family: 'Arial', sans-serif; /* A more neutral font for the body */
+            background-color: #FFECF7;
+            color: #5A2C5C;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-title {
+            font-size: 1.8rem; /* Slightly smaller size for better readability */
+            color: #FF4081;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif; /* Elegant serif font for the intro */
+        }
+
+        .brand-name {
+            color: #FF4081;
+            font-style: italic;
+        }
+
+        .intro-text,
+        .mission-text,
+        .contact-text,
+        .thank-you-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .mission-text {
+            color: #8E4585;
+        }
+
+        .passion-text {
+            color: #9B4F96;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .contact-text {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .thank-you-text {
+            font-size: 1.1rem;
+            color: #9B4F96;
+        }
+
+        /* Optional: Add a light pink background for the body */
+        body {
+            background-color: #FFF0F5;
+        }
+
+        /* Add cute border and shadows */
+        .barbie-theme p {
+            background-color: #FAD0E6;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+{% endblock %}
